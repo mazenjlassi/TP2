@@ -6,7 +6,7 @@
         public string? Name { get; set; }
         public Movie() { }
 
-        public Guid? IdGenre { get; set; }
-        public Genre  Genre { get; set; }
+        public Guid IdGenre { get; set; }
+        public Genre?  Genre { get; set; }
     }
 }

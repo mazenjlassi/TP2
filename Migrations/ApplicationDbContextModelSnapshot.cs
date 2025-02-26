@@ -62,10 +62,10 @@ namespace TP2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<Guid>("GenreId")
+                    b.Property<Guid?>("GenreId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("IdGenre")
+                    b.Property<Guid>("IdGenre")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -82,9 +82,7 @@ namespace TP2.Migrations
                 {
                     b.HasOne("TP2.Models.Genre", "Genre")
                         .WithMany("Movies")
-                        .HasForeignKey("GenreId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GenreId");
 
                     b.Navigation("Genre");
                 });

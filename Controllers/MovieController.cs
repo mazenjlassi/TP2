@@ -23,22 +23,18 @@ namespace TP2.Controllers
 
         public IActionResult Create()
         {
-            ViewData["IdGenre"] = new SelectList(_context.Genres, "id", "name"); 
+            ViewData["IdGenre"] = new SelectList(_context.Genres, "Id", "Name");
             return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Create(Movie movie)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Movies.Add(movie);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(movie);
-        } 
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
 
         // GET: Movie/Edit/{id}
         public IActionResult Edit(int id)

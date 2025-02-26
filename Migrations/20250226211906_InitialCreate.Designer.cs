@@ -12,8 +12,8 @@ using TP2.Data;
 namespace TP2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250225144442_addCreation")]
-    partial class addCreation
+    [Migration("20250226211906_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,10 +65,10 @@ namespace TP2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<Guid>("GenreId")
+                    b.Property<Guid?>("GenreId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("IdGenre")
+                    b.Property<Guid>("IdGenre")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -85,9 +85,7 @@ namespace TP2.Migrations
                 {
                     b.HasOne("TP2.Models.Genre", "Genre")
                         .WithMany("Movies")
-                        .HasForeignKey("GenreId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GenreId");
 
                     b.Navigation("Genre");
                 });

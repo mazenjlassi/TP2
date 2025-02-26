@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\.Net\\TP2\\TP2\\TP2.csproj": {}
+    "C:\\Users\\MSI\\source\\TP2\\TP2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\.Net\\TP2\\TP2\\TP2.csproj": {
+    "C:\\Users\\MSI\\source\\TP2\\TP2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\.Net\\TP2\\TP2\\TP2.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\source\\TP2\\TP2.csproj",
         "projectName": "TP2",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\.Net\\TP2\\TP2\\TP2.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\.Net\\TP2\\TP2\\obj\\",
+        "projectPath": "C:\\Users\\MSI\\source\\TP2\\TP2.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\source\\TP2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
